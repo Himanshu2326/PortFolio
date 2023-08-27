@@ -1,0 +1,390 @@
+
+
+/* 
+================================
+*-> Media  Queries  Section:
+================================
+*/
+
+/*
+ =====================
+*  :=>  1350Px 
+====================== 
+*/
+@media screen and (max-width:1350px) {
+    .container {
+        max-width: 130rem;
+        padding: 0 3.2rem;
+    }
+
+    .Navbar-List {
+        gap: 3.5rem;
+    }
+}
+
+
+
+/*
+ =====================
+*  :=>  1200Px 
+======================
+ */
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .container {
+        max-width: 110rem;
+    }
+
+    .grid {
+        gap: 4.8rem;
+    }
+
+    /* Resume Section */
+    .section-resume .grid-two-col {
+        grid-template-columns: 1.1fr 2fr;
+    }
+
+    .section-resume .resume-data-subsection .grid-two-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*
+ =====================
+*  :=>  1000Px 
+====================== 
+*/
+
+@media screen and (max-width:1000px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 105rem;
+    }
+
+    .Section-Hero h1 {
+        line-height: 1.05;
+        font-size: 4.5rem;
+    }
+
+    .section-hero-img {
+        justify-content: flex-end;
+    }
+
+    /* Services Section */
+    .Section-Services .grid {
+        gap: 5.8rem;
+    }
+
+    .Section-Services .grid-three-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Resume Section */
+    .section-resume .grid-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-img {
+        grid-row: 2;
+    }
+
+    .section-resume .grid-two-col img {
+        width: 50%;
+    }
+
+    .Section-Footer .grid-four-col {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .f-about {
+        max-width: 30rem;
+    }
+
+    /* Services */
+
+    .service-box {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:978px) {
+
+    header {
+        position: relative;
+    }
+
+    .toggler-bar {
+        display: block;
+        z-index: 10;
+    }
+
+    .toggler-bar .icon {
+        font-size: 3.2rem;
+        color: var(--heading);
+    }
+
+    .Navbar {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background: var(--Navbg);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: 0.3s linear;
+    }
+
+    .Navbar-List {
+        flex-direction: column;
+        visibility: hidden;
+        align-items: center;
+    }
+
+    .toggler-bar .fa-xmark {
+        color: var(--heading) !important;
+    }
+
+    .Navbar-List .Navlink {
+        font-size: 2.5rem;
+        color: var(--heading);
+    }
+}
+
+/* 
+=====================
+*  :=>  768Px 
+====================== 
+*/
+
+@media (max-width:768px) {
+    .container {
+        max-width: 80rem;
+    }
+
+    /* Hera Section */
+    .Section-Hero .grid-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero-img {
+        justify-content: center;
+    }
+
+    .section-hero-data {
+        align-items: center;
+        text-align: center;
+    }
+
+    .Section-Hero h1 {
+        line-height: 1.3;
+    }
+
+    .hero-para {
+        margin-top: 0rem;
+    }
+
+    .hero-Img {
+        max-width: 55%;
+    }
+
+    /* Bio Data */
+
+    .Section-bio-data .grid-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .Section-bio-data .bio-image {
+        grid-row: 2;
+        margin-top: 3.2rem;
+    }
+
+    .bio-image {
+        justify-content: center;
+    }
+
+    .bio-image img {
+        width: 60%;
+    }
+
+    /* Portfolio Section */
+
+    .Section-project .grid-three-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Section-Num .grid-four-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-overlay .common-heading{
+        font-size: 3.5rem;
+    }
+
+    .img-overlay .common-heading::before,
+    .img-overlay .common-heading::after{
+        content: '';
+        width: 0;
+        height: 0;
+    }
+
+    .Section-Freelancing {
+        background: url('SBG.webp') no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        position: relative;
+        transition: all 0.7s linear;
+        text-align: center;
+        background-size: cover;
+    }
+}
+
+/*
+ =====================
+*  :=>  576Px 
+====================== 
+*/
+
+@media (max-width:576px) {
+
+    .count-num {
+        font-size: 4.2rem;
+    }
+
+    .Section-Services .grid-three-col {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-data-subsection {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .resume-data-right {
+        align-items: flex-start;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .Section-Freelancing h2 {
+        font-size: 4rem;
+    }
+
+    .Section-Contact {
+        padding: 4rem 3.2rem;
+    }
+
+    .Section-Contact .grid-two-col {
+        grid-template-columns: 1fr
+    }
+
+    .Main-Contact-Section input[type="submit"] {
+        max-width: 40%;
+    }
+
+    .Section-Footer .grid-four-col {
+        grid-template-columns: 1fr;
+    }
+
+    .f-about {
+        max-width: 40rem;
+    }
+    .img-overlay .common-heading{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/*
+ =====================
+*  :=>  450Px 
+====================== 
+*/
+
+@media (max-width: 450px) {
+
+    .Section-Hero h1 {
+        font-size: 3.5rem;
+    }
+
+}
+
+/*
+ =====================
+*  :=>  350Px 
+====================== 
+*/
+
+@media (max-width: 350px) {
+    .Main-Contact-Section input[type="submit"] {
+        max-width: 55%;
+    }
+
+    .count-num {
+        font-size: 3.5rem;
+    }
+
+    .Section-Num .grid {
+        gap: 2.5rem;
+    }
+
+    .header {
+        padding: 0px 3.5rem;
+    }
+
+    .p-btns {
+        gap: 2.2rem;
+        margin: 5rem;
+    }
+
+
+    .p-btns .btn {
+        padding: 0.7rem 1rem;
+        font-size: 1.3rem;
+    }
+
+    .swiper-msg {
+        padding: 3rem 6rem;
+    }
+
+    .Section-Swiper p {
+        font-size: 1.1rem;
+    }
+
+    .swiper-slide img {
+        max-width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .Section-Freelancing h2 {
+        font-size: 3.5rem;
+    }
+
+    .Section-Freelancing p {
+        font-size: 1.3rem;
+    }
+
+    .Section-Hero p {
+        font-size: 1.1rem;
+    }
+    .Section-Hero h1 {
+        font-size: 2.7rem;
+    }
+    .img-overlay .common-heading{
+        font-size: 1.8rem;
+    }
+}

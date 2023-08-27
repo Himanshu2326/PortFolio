@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check out my portfolio website to see my work as a web developer, MERN Developer.
+            I offer a variety of services to help you with your creative projects">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, NodeJs, MongoDB, Web Developer, MERN Developer">
+    <meta name="author" content="Himanshu Prajapati">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <link rel="shortcut icon" href="./Favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script defer src="script.js"></script>>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="wrapper">
+            <a href="/"><span class="WebName">MY PORTFOLIO</span></a>
+        </div>
+        <nav class="Navbar">
+            <ul class="Navbar-List">
+                <li><a href="#Home" class="Navlink">Home</a></li>
+                <li><a href="#Projects" class="Navlink">Projects</a></li>
+                <li><a href="#Skills" class="Navlink">Skills</a></li>
+                <li><a href="#Resume" class="Navlink">Resume</a></li>
+                <li><a href="#Contact" class="Navlink">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggler-bar">
+            <i class="fa-sharp fa-solid fa-bars icon Toggler"></i>
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+
+        <section class="Section-Hero Section ViewSection" id="Home">
+
+            <div class="container grid grid-two-col">
+
+                <!--* Left  -->
+                <div class="section-hero-data">
+
+                    <p class="hero-top-data">This is Me</p>
+                    <h1 class="hero-heading">I'm <span class=" AutoType"></span></h1>
+
+                    <p class="hero-para">
+                        I'm Himanshu Prajapati a MERN full stack developer and youtuber. MERN stack developer and
+                        youtuber!
+                    </p>
+                    <div>
+                        <a href="#Contact" class="btn hire-me">Hire Me</a>
+                    </div>
+
+                </div>
+                <!--* Right -->
+                <div class="section-hero-img">
+                    <picture class="Center">
+                        <source srcset="IMG1.webp" type="Image/webp">
+                        <source srcset="IMG1--.jpg" type="Image/jpg">
+
+                        <img class="hero-Img" src="IMG1--.jpg" alt="My Image">
+                    </picture>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <section class="Section-bio-data Section" id="Bio-Data">
+
+        <div class="container grid grid-two-col">
+
+            <!--* Left Side -->
+            <div class="bio-image ">
+
+                <img src="Bio.webp" loading="lazy" alt="My Bio Image">
+
+            </div>
+
+            <!--* Right Side -->
+            <div class="bio-data">
+
+                <h2 class="common-heading">My Bio Data</h2>
+                <p>I'm Himanshu a Full-Stack Web Developer with experience in HTML, CSS, JavaScript, J-Query, MERN
+                    Stack,
+                    APIs etc.I am passionate about building user-friendly and scalable web
+                    applications.I am also a quick learner and is always up for a challenge.</p>
+
+                <div class="bio-data-stats">
+                    <div class="bio-stats">
+                        <h3>HTML</h3>
+                        <div class="bio-progress-bar">
+                            <span class="Center">80%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>CSS</h3>
+                        <div class="bio-progress-bar bio-progress-bar2">
+                            <span class="Center">75%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>JavaScript</h3>
+                        <div class="bio-progress-bar bio-progress-bar3">
+                            <span class="Center">80%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>BootStrap</h3>
+                        <div class="bio-progress-bar bio-progress-bar4">
+                            <span class="Center">85%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>MERN</h3>
+                        <div class="bio-progress-bar bio-progress-bar5">
+                            <span class="Center">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-data-btn">
+                    <a href="#" class="btn" download target="_blank">Download Cv</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="Section-project Section ViewSection" id="Projects">
+
+        <div class="container ">
+            <h2 class="common-heading">Projects Works</h2>
+            <p>Completed Over 50+ Mini as well as Major Projects Using HTML, CSS, JavaScript, Bootstrap, J-Query At
+                Frontend
+                and Backend
+                With NodeJs, ExpressJs, MongoDB, APIs. Check Out Some Projects Here. </p>
+        </div>
+
+        <div class="p-btns Center">
+            <div class="btn p-btn" data-btn-num="1">Website</div>
+            <div class="btn p-btn" data-btn-num="2">JavaScript</div>
+            <div class="btn p-btn" data-btn-num="3">MERN</div>
+        </div>
+
+        <div class="container grid grid-three-col project-img">
+
+            <div class="img-overlay p-btn--1">
+                <a href="https://trueweatherapp.onrender.com/"><img src="Pro1.png" loading="lazy" alt=""></a>
+                <div class="overlay ">
+                    <a href="https://trueweatherapp.onrender.com/" class="common-heading">Project 1</a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--2">
+                <img src="Pro2.png" loading="lazy" alt="">
+                <div class="overlay">
+                    <a href="https://himanshu2326.github.io/Calculator/" class="common-heading">Project 2</a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--2">
+                <img src="Proo5.png" loading="lazy" alt="">
+                <div class="overlay">
+                    <a href="https://himanshu2326.github.io/TicTacToe/" class="common-heading">Project 3</a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--1 p-btn--3">
+                <img src="Rectify.png" loading="lazy" alt="">
+                <div class="overlay">
+                    <a href="https://himanshu2326.github.io/rectify/" class="common-heading">Project 4</a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--2">
+                <img src="Pro3.webp" loading="lazy" alt="">
+                <div class="overlay">
+                    <a href="https://himanshu2326.github.io/DigitalClock/" class="common-heading">Project 5</a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--3 p-btn--3">
+                <img src="Pro6.webp" loading="lazy" alt="">
+                <div class="overlay">
+                    <a href="https://himanshu2326.github.io/TodoList/" class="common-heading">Project 6</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="Section Section-Num" id="Auto-Num">
+        <div class="container grid grid-four-col">
+            <div>
+                <h2 class="count-num" data-num="2000">0+</h2>
+                <p>Cups Of Tea</p>
+            </div>
+            <div>
+                <h2 class="count-num" data-num="3000">0+</h2>
+                <p>Hours Of Learning</p>
+            </div>
+            <div>
+                <h2 class="count-num" data-num="5000">0+</h2>
+                <p>Lines Of Code</p>
+            </div>
+            <div>
+                <h2 class="count-num" data-num="1000">0+</h2>
+                <p>Hours Of Work</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="Section Section-Services ViewSection" id="Skills">
+        <div class="container">
+            <h2 class="common-heading">Proficient With</h2>
+            <p>Check Out My All Skills That I'm Proficient With Working</p>
+        </div>
+
+        <div class="container grid grid-three-col">
+            <div class="service-box">
+                <ion-icon name="logo-react" class="service-icon"></ion-icon>
+                <h3>Web Development</h3>
+                <p>Full Stack Web Development In MERN Stack, Which Includes MongoDB, Express, React, And
+                    NodeJs.</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="logo-html5" class="service-icon"></ion-icon>
+                <h3>FrontEnd</h3>
+                <p>Proficient On Working With Front-End Developement In HTML, CSS, JavaScript, jQuery.</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="logo-nodejs" class="service-icon"></ion-icon>
+                <h3>Backend</h3>
+                <p>Doing My Backend Development With NodeJs, ExpressJs and also Have Basic Knowledge of
+                    APIs(Application Programming Interface).</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
+                <h3>Framework</h3>
+                <p>Familiar With BootStrap Version 4, 5 and Build Many Responsive Projects Using BootStrap classes.</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="logo-javascript" class="service-icon"></ion-icon>
+                <h3>JavaScript</h3>
+                <p>Experienced With JavaScript To Build Many Static, Dynamic and interactive web applications
+                    and Projects.</p>
+            </div>
+            <div class="service-box">
+                <ion-icon name="server-outline" class="service-icon"></ion-icon>
+                <h3>Database</h3>
+                <p>Proficient With the MongoDB database, including CRUD operations. I
+                    am also experienced in using MongoDB to build scalable and reliable web applications.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section-resume Section ViewSection" id="Resume">
+        <div class="container grid grid-two-col">
+            <!-- resume left side  -->
+            <div class="resume-img">
+                <img src="Lazy.jpg" alt="my resume pic" data-src="IMG2.webp" loading="lazy" class="lazy-img" />
+            </div>
+
+            <!-- resume right side  -->
+            <div class="resume-data">
+                <h2 class="common-heading">resume</h2>
+                <p class="resume-para">my skills in</p>
+
+                <!-- 1st work experience  -->
+                <div class="resume-data-subsection">
+                    <div class="resume-data-left">
+                        <h3>Frontend - HTML, CSS, JavaScript </h3>
+                        <div class="grid grid-two-col">
+                            <p>
+                                <ion-icon name="business-outline"></ion-icon> From Youtube
+                            </p>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> Home, Noida
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-data-right">
+                        <p class="resume-data-button">Completed</p>
+                        <p>
+                            <ion-icon name="calendar-outline"></ion-icon> <span>Sep 2022 - Present </span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2nd work experience  -->
+                <div class="resume-data-subsection">
+                    <div class="resume-data-left">
+                        <h3>Backend - NodeJs, ExpressJs, APIs</h3>
+                        <div class="grid grid-two-col">
+                            <p>
+                                <ion-icon name="business-outline"></ion-icon> From Youtube
+                            </p>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon>Home, Noida
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-data-right">
+                        <p class="resume-data-button">Completed</p>
+                        <p>
+                            <ion-icon name="calendar-outline"></ion-icon> April 2022 -
+                            Present
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3rd work experience  -->
+                <div class="resume-data-subsection">
+                    <div class="resume-data-left">
+                        <h3>DataBase - MongoDB</h3>
+                        <div class="grid grid-two-col">
+                            <p>
+                                <ion-icon name="business-outline"></ion-icon> From Youtube
+                            </p>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> Home, Noida
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-data-right">
+                        <p class="resume-data-button">Completed</p>
+                        <p>
+                            <ion-icon name="calendar-outline"></ion-icon>June 2023 -
+                            Present
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4th work experience  -->
+                <div class="resume-data-subsection">
+                    <div class="resume-data-left">
+                        <h3>Others - Bootstrap, J-Query</h3>
+                        <div class="grid grid-two-col">
+                            <p>
+                                <ion-icon name="business-outline"></ion-icon> From Youtube
+                            </p>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> Home, Noida
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-data-right">
+                        <p class="resume-data-button">Completed</p>
+                        <p>
+                            <ion-icon name="calendar-outline"></ion-icon>Jan 2023 -
+                            Present
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 5th work experience  -->
+                <div class="resume-data-subsection">
+                    <div class="resume-data-left">
+                        <h3>Framework - ReactJs</h3>
+                        <div class="grid grid-two-col">
+                            <p>
+                                <ion-icon name="business-outline"></ion-icon> From Youtube
+                            </p>
+                            <p>
+                                <ion-icon name="location-outline"></ion-icon> Home, Noida
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-data-right">
+                        <p class="resume-data-button">Ongoing</p>
+                        <p>
+                            <ion-icon name="calendar-outline"></ion-icon>Aug 2023 -
+                            Present
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Education section  -->
+                <div class="resume-data-bottom-subsection">
+                    <p class="resume-para">Education</p>
+
+                    <!-- 1st college  -->
+                    <div class="resume-data-subsection margin-small">
+                        <div class="resume-data-left">
+                            <h3>Primary And Secondary Education</h3>
+                            <div class="grid grid-two-col">
+                                <p>
+                                    <ion-icon name="business-outline"></ion-icon> BJSS School
+                                </p>
+                                <p>
+                                    <ion-icon name="location-outline"></ion-icon> Ghaziabad, UP
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="resume-data-right">
+                            <p class="resume-data-button">10th & 12th</p>
+                            <p>
+                                <ion-icon name="calendar-outline"></ion-icon> <span>April 2018 - 2021 </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2nd college  -->
+                    <div class="resume-data-subsection ">
+                        <div class="resume-data-left">
+                            <h3>Bachelors in Computer Application</h3>
+                            <div class="grid grid-two-col">
+                                <p>
+                                    <ion-icon name="business-outline"></ion-icon> Hierank Bussiness School
+                                </p>
+                                <p>
+                                    <ion-icon name="location-outline"></ion-icon> Noida, UP
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="resume-data-right">
+                            <p class="resume-data-button"> Bachelor </p>
+                            <p>
+                                <ion-icon name="calendar-outline"></ion-icon> <span>Sep 2021 - Ongoing</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end  -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="Section Section-Freelancing" id="Freelancing">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>I am <span>avaliable</span> for freelancing and hiring</h2>
+            <p>I Am Avaliable For Hiring Click Below To Contact</p>
+            <a href="#Contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="Section Section-Contact ViewSection" id="Contact">
+        <div class="container">
+            <div class="common-heading">Contact Us</div>
+        </div>
+        <div class="Main-Contact-Section">
+            <form action="https://formspree.io/f/meqbgdvy" method="POST">
+                <div class="grid grid-two-col">
+                    <div>
+                        <label for="username"></label>
+                        <input class="Input" type="text" name="username" placeholder="Name" id="username" required
+                            autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input class="Input" type="email" name="email" placeholder="E Mail" id="email" required
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div>
+                    <label for="Subject"></label>
+                    <input class="Input" type="text" name="subject" id="subject" placeholder="Subject" required
+                        autocomplete="off">
+                </div>
+                <div>
+                    <label for="message"></label>
+                    <textarea class="Input" name="message" id="message" cols="30" rows="10"
+                        placeholder="Enter Your Message"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send Message" name="submit" class="btn" required autocomplete="off"
+                        minlength="5">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="Section Section-Footer">
+        <div class="container grid grid-four-col">
+            <div class="f-about">
+                <h3>About</h3>
+                <p> I'm Himanshu Prajapati a MERN full stack developer and youtuber. MERN stack developer and
+                    youtuber!</p>
+            </div>
+            <div class="f-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Home">Home</a></li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a
+                            href="#Projects">Projects</a></li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Skills">Skills</a>
+                    </li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Resume">Resume</a>
+                    </li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f-services">
+                <h3>Skills</h3>
+                <ul>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Skills">Web
+                            Design</a></li>
+                    </li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Skills">FrontEnd</a>
+                    </li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Skills">Backend</a>
+                    </li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a
+                            href="#Skills">JavaScript</a></li>
+                    <li><span><ion-icon name="chevron-forward-outline"></ion-icon></span><a href="#Skills">DataBase</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="f-address">
+                <h3>Have Any Question?</h3>
+                <address>
+                    <div>
+                        <p>
+                            <span>
+                                <ion-icon name="location-outline"></ion-icon>
+                            </span>Noida , India
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span>
+                                <ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+918700634299">+91 8700634299</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:himanshuprajapati71305@gmail.com">himanshuprajapati71305@gmail.com</a>
+                        </p>
+                    </div>
+                </address>
+            </div>
+        </div>
+        <div class="container">
+            <div class="f-social-icons">
+                <a href="https://github.com/Himanshu2326"><ion-icon class="icons" name="logo-github"></ion-icon></a>
+                <a href="https://www.youtube.com/@justfunvlogs2326" target="_blank"><ion-icon class="icons"
+                        name="logo-youtube"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/himanshu-prajapati-43b5b3259/" target="_blank"><ion-icon
+                        class="icons" name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
