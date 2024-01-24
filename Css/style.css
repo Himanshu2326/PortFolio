@@ -893,7 +893,7 @@ li {
 */
 
 .Section-Freelancing {
-    background: url('BG1.webp') no-repeat;
+    background: url('../Images/BG1.webp') no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     position: relative;
