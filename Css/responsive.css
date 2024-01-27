@@ -239,7 +239,7 @@
     }
 
     .Section-Freelancing {
-        background: url('Images/SBG.webp') no-repeat;
+        background: url('../Images/SBG.webp') no-repeat;
         background-size: 100%;
         background-attachment: fixed;
         position: relative;
