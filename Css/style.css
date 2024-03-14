@@ -50,6 +50,24 @@ body {
     overflow-x: hidden;
 }
 
+
+/** Loader */
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 10;
+}
+
+.loader img{
+    height: 80px;
+}
+
 h1 {
     font-family: 'Work Sans', sans-serif;
 }
@@ -354,6 +372,8 @@ li {
 .hero-Img {
     max-width: 70%;
     box-shadow: -0.7rem -0.7rem 0 0 var(--helper);
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    animation: water-wave 4s linear infinite;
 }
 
 /* 
