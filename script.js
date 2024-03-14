@@ -1,6 +1,20 @@
 
 //* Welcome To JavaScript Part:----
 
+/* 
+================================
+?-> Loader
+================================
+*/
+
+let loader = document.querySelector('.loader');
+
+let showLoader = () => {
+    loader.style.display = 'none';
+}
+
+
+
 
 
 /* 
@@ -90,23 +104,23 @@ Navbar_List.addEventListener("click", () => {
 
 let Section = document.querySelectorAll('.ViewSection');
 
-    window.onscroll = () => {
-        Section.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 90;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
+window.onscroll = () => {
+    Section.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 90;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-            if (top >= offset && top < offset + height) {
-                Navlink.forEach(links => {
-                    document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('active')
-                    links.classList.remove('active');
-                    document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('active')
+        if (top >= offset && top < offset + height) {
+            Navlink.forEach(links => {
+                document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('active')
+                links.classList.remove('active');
+                document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('active')
 
-                })
-            }
-        })
-    }
+            })
+        }
+    })
+}
 
 
 /* 

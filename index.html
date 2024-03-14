@@ -8,6 +8,7 @@
             I offer a variety of services to help you with your creative projects">
     <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, NodeJs, MongoDB, Web Developer, MERN Developer">
     <meta name="author" content="Himanshu Prajapati">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/responsive.css">
@@ -21,12 +22,29 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script defer src="script.js"></script>>
+    <script defer src="script.js"></script>
 </head>
 
-<body>
+<body onload="showLoader()">
 
 
+    <!-- 
+====================
+! Loader 
+====================
+-->
+
+    <div class="loader">
+        <img src="./Images/loader.gif" alt="">
+    </div>
+
+
+
+    <!-- 
+====================
+? NavBar Header 
+====================
+-->
     <header class="header">
         <div class="wrapper">
             <a href="#"><span class="WebName">MY PORTFOLIO</span></a>
@@ -45,18 +63,18 @@
         </div>
     </header>
 
-
-
-
-
+    <!-- 
+====================
+* Main Hero Section 
+====================
+-->
     <main>
-
         <section class="Section-Hero Section ViewSection" id="Home">
 
             <div class="container grid grid-two-col">
 
                 <!--* Left  -->
-                <div class="section-hero-data">
+                <div class="section-hero-data" data-aos="zoom-out">
 
                     <p class="hero-top-data">This is Me</p>
                     <h1 class="hero-heading">I'm <span class=" AutoType"></span></h1>
@@ -72,12 +90,10 @@
                 </div>
 
                 <!--* Right -->
-                <div class="section-hero-img">
+                <div class="section-hero-img" data-aos="zoom-in">
                     <picture class="Center">
-                        <source srcset="Images/IMG1.webp" type="Image/webp">
-                        <source srcset="Images/IMG1--.jpg" type="Image/jpg">
-
-                        <img class="hero-Img" src="Images/IMG1--.jpg" alt="My Image">
+                        <source srcset="Images/NewBg.webp" type="Image/webp">
+                        <img class="hero-Img" src="Images/NewBg.webp" alt="My Image">
                     </picture>
 
                 </div>
@@ -88,22 +104,25 @@
     </main>
 
 
-
-
+    <!-- 
+====================
+? Boi Section 
+====================
+-->
 
     <section class="Section-bio-data Section" id="Bio-Data">
 
         <div class="container grid grid-two-col">
 
             <!--* Left Side -->
-            <div class="bio-image ">
+            <div class="bio-image " data-aos="fade-left">
 
                 <img src="Images/Bio.webp" loading="lazy" alt="My Bio Image">
 
             </div>
 
             <!--* Right Side -->
-            <div class="bio-data">
+            <div class="bio-data" data-aos="fade-right">
 
                 <h2 class="common-heading">My Bio Data</h2>
                 <p>I'm Himanshu a Full-Stack Web Developer with experience in HTML, CSS, JavaScript, J-Query, MERN
@@ -145,7 +164,8 @@
                 </div>
 
                 <div class="bio-data-btn">
-                    <a href="https://drive.google.com/file/d/141BoI8GfqFc6jGbdxlPRyae-6lNJvQHa/view?usp=drivesdk" class="btn" download target="_blank">Download Cv</a>
+                    <a href="https://drive.google.com/file/d/141BoI8GfqFc6jGbdxlPRyae-6lNJvQHa/view?usp=drivesdk"
+                        class="btn" download target="_blank">Download Cv</a>
                 </div>
 
             </div>
@@ -155,10 +175,14 @@
     </section>
 
 
-
+    <!-- 
+====================
+* Project Section 
+====================
+-->
     <section class="Section-project Section ViewSection" id="Projects">
 
-        <div class="container ">
+        <div class="container" data-aos="zoom-in">
             <h2 class="common-heading">Projects Works</h2>
             <p>Completed Over 50+ Mini as well as Major Projects Using HTML, CSS, JavaScript, Bootstrap, J-Query At
                 Frontend
@@ -166,7 +190,7 @@
                 With NodeJs, ExpressJs, MongoDB, APIs. Check Out Some Projects Here. </p>
         </div>
 
-        <div class="p-btns Center">
+        <div class="p-btns Center" data-aos="zoom-in">
             <div class="btn p-btn" data-btn-num="1">Website</div>
             <div class="btn p-btn" data-btn-num="2">JavaScript</div>
             <div class="btn p-btn" data-btn-num="3">MERN</div>
@@ -174,42 +198,43 @@
 
         <div class="container grid grid-three-col project-img">
 
-            <div class="img-overlay p-btn--1">
-                <a href="https://trueweatherapp.onrender.com/"><img src="Images/Project_1.png" loading="lazy" alt=""></a>
+            <div class="img-overlay p-btn--1" data-aos="fade-left">
+                <a href="https://trueweatherapp.onrender.com/"><img src="Images/Project_1.webp" loading="lazy"
+                        alt=""></a>
                 <div class="overlay ">
                     <a href="https://trueweatherapp.onrender.com/" class="common-heading">Project 1</a>
                 </div>
             </div>
 
-            <div class="img-overlay p-btn--2">
-                <img src="Images/Project_2.png" loading="lazy" alt="">
+            <div class="img-overlay p-btn--2" data-aos="zoom-in">
+                <img src="Images/Project_2.webp" loading="lazy" alt="">
                 <div class="overlay">
                     <a href="https://himanshu2326.github.io/Calculator/" class="common-heading">Project 2</a>
                 </div>
             </div>
 
-            <div class="img-overlay p-btn--2">
-                <img src="Images/Project_3.png" loading="lazy" alt="">
+            <div class="img-overlay p-btn--2" data-aos="fade-right">
+                <img src="Images/Project_3.webp" loading="lazy" alt="">
                 <div class="overlay">
                     <a href="https://himanshu2326.github.io/Git-Repo/" class="common-heading">Project 3</a>
                 </div>
             </div>
 
-            <div class="img-overlay p-btn--1 p-btn--3">
-                <img src="Images/Project_4.png" loading="lazy" alt="">
+            <div class="img-overlay p-btn--1 p-btn--3" data-aos="fade-left">
+                <img src="Images/Project_4.webp" loading="lazy" alt="">
                 <div class="overlay">
                     <a href="https://demoform.onrender.com/" class="common-heading">Project 4</a>
                 </div>
             </div>
 
-            <div class="img-overlay p-btn--2">
-                <img src="Images/Project_5.png" loading="lazy" alt="">
+            <div class="img-overlay p-btn--2" data-aos="zoom-in">
+                <img src="Images/Project_5.webp" loading="lazy" alt="">
                 <div class="overlay">
                     <a href="https://himanshu2326.github.io/Quotes/" class="common-heading">Project 5</a>
                 </div>
             </div>
 
-            <div class="img-overlay p-btn--3 p-btn--3">
+            <div class="img-overlay p-btn--3 p-btn--3" data-aos="fade-right">
                 <img src="Images/Project_6.webp" loading="lazy" alt="">
                 <div class="overlay">
                     <a href="https://himanshu2326.github.io/TodoList/" class="common-heading">Project 6</a>
@@ -219,6 +244,11 @@
     </section>
 
 
+    <!-- 
+====================
+? Number Section 
+====================
+-->
 
     <section class="Section Section-Num" id="Auto-Num">
         <div class="container grid grid-four-col">
@@ -242,16 +272,20 @@
     </section>
 
 
+    <!-- 
+====================
+* Skills Section 
+====================
+-->
 
-
-    <section class="Section Section-Services ViewSection" id="Skills">
+    <section class="Section Section-Services ViewSection" id="Skills" data-aos="zoom-in">
         <div class="container">
             <h2 class="common-heading">Proficient With</h2>
             <p>Check Out My All Skills That I'm Proficient With Working</p>
         </div>
 
         <div class="container grid grid-three-col">
-            <div class="service-box">
+            <div class="service-box" t">
                 <ion-icon name="logo-react" class="service-icon"></ion-icon>
                 <h3>Web Development</h3>
                 <p>Full Stack Web Development In MERN Stack, Which Includes MongoDB, Express, React, And
@@ -262,13 +296,13 @@
                 <h3>FrontEnd</h3>
                 <p>Proficient On Working With Front-End Developement In HTML, CSS, JavaScript, jQuery.</p>
             </div>
-            <div class="service-box">
+            <div class="service-box" ht">
                 <ion-icon name="logo-nodejs" class="service-icon"></ion-icon>
                 <h3>Backend</h3>
                 <p>Doing My Backend Development With NodeJs, ExpressJs and also Have Basic Knowledge of
                     APIs(Application Programming Interface).</p>
             </div>
-            <div class="service-box">
+            <div class="service-box" t">
                 <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
                 <h3>Framework</h3>
                 <p>Familiar With BootStrap Version 4, 5 and Build Many Responsive Projects Using BootStrap classes.</p>
@@ -279,7 +313,7 @@
                 <p>Experienced With JavaScript To Build Many Static, Dynamic and interactive web applications
                     and Projects.</p>
             </div>
-            <div class="service-box">
+            <div class="service-box" ht">
                 <ion-icon name="server-outline" class="service-icon"></ion-icon>
                 <h3>Database</h3>
                 <p>Proficient With the MongoDB database, including CRUD operations. I
@@ -290,18 +324,23 @@
     </section>
 
 
-
+    <!-- 
+====================
+? Resume Section 
+====================
+-->
 
 
     <section class="section-resume Section ViewSection" id="Resume">
         <div class="container grid grid-two-col">
             <!-- resume left side  -->
-            <div class="resume-img">
-                <img src="Images/Lazy.jpg" alt="my resume pic" data-src="Images/IMG2.webp" loading="lazy" class="lazy-img" />
+            <div class="resume-img" data-aos="fade-left">
+                <img src="Images/Lazy.jpg" alt="my resume pic" data-src="Images/IMG2.webp" loading="lazy"
+                    class="lazy-img" />
             </div>
 
             <!-- resume right side  -->
-            <div class="resume-data">
+            <div class="resume-data" data-aos="fade-right">
                 <h2 class="common-heading">resume</h2>
                 <p class="resume-para">my skills in</p>
 
@@ -475,6 +514,12 @@
     </section>
 
 
+    <!-- 
+======================
+* Freelancing Section 
+======================
+-->
+
     <section class="Section Section-Freelancing" id="Freelancing">
         <div class="overlay"></div>
         <div class="container">
@@ -486,8 +531,13 @@
 
 
 
+    <!-- 
+======================
+? Contact Section 
+======================
+-->
 
-    <section class="Section Section-Contact ViewSection" id="Contact">
+    <section class="Section Section-Contact ViewSection" id="Contact" data-aos="zoom-in">
         <div class="container">
             <div class="common-heading">Contact Us</div>
         </div>
@@ -524,11 +574,15 @@
     </section>
 
 
-
+    <!-- 
+======================
+? Footer Section 
+======================
+-->
 
 
     <footer class="Section Section-Footer">
-        <div class="container grid grid-four-col">
+        <div class="container grid grid-four-col" data-aos="zoom-in">
             <div class="f-about">
                 <h3>About</h3>
                 <p> I'm Himanshu Prajapati a MERN full stack developer and youtuber. MERN stack developer and
@@ -594,10 +648,12 @@
         <div class="container">
             <div class="f-social-icons">
                 <a href="https://github.com/Himanshu2326"><ion-icon class="icons" name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/himanshuprajapati23/" target="_blank"><ion-icon class="icons"
+                        name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/himanshuprajapati23/" target="_blank"><ion-icon class="icons"
+                        name="logo-twitter"></ion-icon></a>
                 <a href="https://www.youtube.com/@justfunvlogs2326" target="_blank"><ion-icon class="icons"
                         name="logo-youtube"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/himanshu-prajapati-43b5b3259/" target="_blank"><ion-icon
-                        class="icons" name="logo-linkedin"></ion-icon></a>
             </div>
         </div>
     </footer>
@@ -608,6 +664,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600
+        });
+    </script>
 
 </body>
 
