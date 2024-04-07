@@ -8,11 +8,13 @@ Here is My Fully Responsive Personal PoftFolio Website That I Created Using Pure
 https://himanshu2326.github.io/PortFolio/
 ## Features Of PortFolio
 
-- Complete Responsive.
+- Complete Responsive
 - View Skills
 - View Projects
 - View Education Details
 - Contact Form
+- Animations
+- Parallax Effect
 - Added Resume etc.
 
 
