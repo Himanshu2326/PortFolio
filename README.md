@@ -1,6 +1,6 @@
 # MY PortFolio 
 
-Here is My Fully Responsive Personal PoftFolio Website That I Create Using HTML, CSS And JavaScript.
+Here is My Fully Responsive Personal PoftFolio Website That I Created Using Pure HTML, CSS And JavaScript.
 
 
 ## Hosted Link
