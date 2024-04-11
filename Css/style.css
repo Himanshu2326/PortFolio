@@ -514,6 +514,7 @@ li {
 .img-overlay {
     overflow: hidden;
     position: relative;
+    box-shadow: 3px -3px 2px 0px #edefff;
 }
 
 .img-overlay .overlay {
@@ -958,10 +959,6 @@ li {
 ?-> Contact Us Section:
 ================================
 */
-
-.Map {
-    margin: 4rem 0;
-}
 
 .Section-Contact .common-heading {
     margin-top: 3.5rem;
